@@ -276,6 +276,10 @@
 
         .hero-right {
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 1.2rem;
         }
 
         .hero-card {
@@ -284,6 +288,7 @@
             padding: 1.6rem 1.4rem;
             border: 1px solid rgba(148, 163, 184, 0.3);
             box-shadow: var(--shadow-soft);
+            width: 100%;
         }
 
         .hero-role {
@@ -322,10 +327,10 @@
         }
 
         .hero-floating {
-            position: absolute;
-            right: -0.6rem;
-            bottom: -0.6rem;
-            width: 170px;
+            position: relative;
+            right: auto;
+            bottom: auto;
+            width: 210px;
             padding: 0.9rem;
             border-radius: 18px;
             background: rgba(15, 23, 42, 0.98);
@@ -340,6 +345,13 @@
         }
 
         .hero-floating span {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .hero-floating-focus {
+            margin-top: 0.5rem;
+            font-size: 0.78rem;
             color: var(--accent);
             font-weight: 500;
         }
@@ -589,6 +601,11 @@
 
             .hero-right {
                 order: -1;
+                align-items: stretch;
+            }
+
+            .hero-floating {
+                width: 100%;
             }
 
             .section {
@@ -669,15 +686,22 @@
                     Multiplatform to ship production-ready experiences.
                 </p>
 
-                <div class="hero-actions">
-                    <!-- TODO: rename this file to match your resume PDF name -->
-                    <a href="Rakesh_Resume.pdf" class="btn btn-primary" download>
-                        Download Resume
-                    </a>
-                    <a href="#contact" class="btn btn-ghost">
-                        Contact Me
-                    </a>
-                </div>
+               
+			   
+			   <div class="hero-actions">
+    <a
+        href="https://drive.google.com/file/d/1Vs2FG9a6yc3EdxwWhOm3UaRJqiGpQC-O/view?usp=sharing"
+        class="btn btn-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Download Resume
+    </a>
+    <a href="#contact" class="btn btn-ghost">
+        Contact Me
+    </a>
+</div>
+
 
                 <div class="hero-meta">
                     <span>9+ years · Mobile Development</span>
@@ -693,8 +717,7 @@
                     <div class="hero-highlights">
                         Building next-gen government apps for
                         <strong>NIC Hyderabad</strong>, integrating Maps, ML Kit,
-                        secure payments, and KMP-based shared logic across
-                        platforms.
+                        and KMP-based shared logic across platforms.
                     </div>
 
                     <div class="hero-badges">
@@ -712,6 +735,9 @@
                         Kotlin · Jetpack Compose · Flutter (GetX) · KMP ·
                         Spring Boot · Ktor · Google Maps · Google ML Kit ·
                         Payment Gateways (BillDesk, Razorpay, ICICI)
+                    </div>
+                    <div class="hero-floating-focus">
+                        Current Focus: Flutter · KMP · Jetpack Compose
                     </div>
                 </div>
             </aside>
@@ -1156,4 +1182,3 @@
     </script>
 </body>
 </html>
-
